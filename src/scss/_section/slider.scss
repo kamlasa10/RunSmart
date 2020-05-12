@@ -1,0 +1,52 @@
+.slider {
+  @include phones {
+    margin-bottom: 20px;
+  }
+}
+
+.slider__wrap {
+  position: relative;
+}
+.slider__list {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__control {
+  position: absolute;
+  top: 235px;
+  background-color: transparent;
+  font-size: 0;
+  border: solid $red;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 8px;
+  cursor: pointer;
+  transition: $smothy;
+  outline: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--left {
+    left: 10%;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  &--right {
+    right: 12%;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  @media (max-width: 1130px) {
+    top: 100%;
+  }
+  @include phones {
+    top: 107%;
+  }
+}

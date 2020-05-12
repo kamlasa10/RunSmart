@@ -1,0 +1,49 @@
+.consultation-form {
+  width: 300px;
+
+  @include phones {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+.consultation-form__item {
+  margin-bottom: 15px;
+}
+
+.consultation-form__input {
+  width: 100%;
+  padding: 18px 20px;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  outline: none;
+  transition: $smothy;
+
+  @include placeholder {
+    color: #4b4b4b;
+  }
+
+  &:focus {
+    border-color: #ccc;
+
+    @include placeholder {
+      opacity: 0;
+      -webkit-transition: opacity 0.35s ease-in-out;
+      transition: opacity 0.35s ease-in-out;
+    }
+  }
+
+  @include phones {
+    width: 90%;
+  }
+}
+.consultation-form__btn {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  width: 100%;
+
+  @include phones {
+    width: 90%;
+  }
+}

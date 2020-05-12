@@ -1,0 +1,50 @@
+.map {
+  position: relative;
+}
+
+.map-card {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  border: none;
+
+  @include phones {
+    min-height: 350px;
+  }
+}
+
+.map__contacts {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -230px;
+  padding-top: 48px;
+  padding-bottom: 56px;
+  width: 460px;
+  text-align: center;
+  color: #fff;
+  background-color: $red;
+
+  @include phones {
+    padding-top: 30px;
+    padding-bottom: 35px;
+    position: static;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.map__address {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 500;
+}
+.map__phone {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}

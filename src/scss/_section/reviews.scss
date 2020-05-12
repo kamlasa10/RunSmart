@@ -1,0 +1,35 @@
+.reviews {
+  @include tablets {
+    margin-bottom: 20px;
+  }
+}
+
+.reviews__item {
+  display: flex;
+  text-align: center;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.reviews__img {
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+
+.reviews__heading {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.reviews__small-text {
+  color: #646464;
+  margin-bottom: 5px;
+}
+
+.reviews__desc {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 20px;
+}

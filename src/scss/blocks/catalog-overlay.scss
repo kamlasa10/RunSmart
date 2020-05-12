@@ -1,0 +1,45 @@
+.catalog-overlay {
+  position: absolute;
+  top: 0;
+  display: none;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  background-color: #fff;
+  transition: all 0.5s;
+  z-index: 2;
+  padding-bottom: 20px;
+}
+.catalog-overlay__item {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  text-align: left;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 7px;
+    width: 5px;
+    height: 5px;
+    background-color: $red;
+  }
+}
+
+.catalog-overlay__block {
+  margin-top: auto;
+}
+
+.catalog-overlay__link {
+  color: $red;
+  font-weight: 500;
+  border-bottom: 1px solid $red;
+  cursor: pointer;
+}

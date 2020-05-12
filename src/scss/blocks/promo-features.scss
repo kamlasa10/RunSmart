@@ -1,0 +1,63 @@
+.promo-features {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 65px;
+  flex-wrap: wrap;
+
+  @include phones {
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+}
+
+.promo-features__item {
+  position: relative;
+  margin-right: 65px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-image: url("../spritePng/sprite.png");
+  }
+  &--time {
+    &:before {
+      background-position: -150px 0px;
+      width: 42px;
+      height: 46px;
+    }
+  }
+  &--delivery {
+    &:before {
+      background-position: -75px -75px;
+      width: 44px;
+      height: 45px;
+    }
+  }
+  &--message {
+    &:before {
+      background-position: 0px -150px;
+      width: 45px;
+      height: 42px;
+    }
+  }
+
+  @include phones {
+    margin-bottom: 30px;
+    margin-right: 0;
+    width: calc(100%);
+    justify-content: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

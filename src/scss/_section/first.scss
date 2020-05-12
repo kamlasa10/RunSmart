@@ -1,0 +1,9 @@
+.main {
+  background: #0d0d0d url("../img/main-bg.jpg") no-repeat center/cover;
+  height: 100vh;
+
+  @include phones {
+    height: 100%;
+    padding-bottom: 30px;
+  }
+}
